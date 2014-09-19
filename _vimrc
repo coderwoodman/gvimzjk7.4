@@ -189,8 +189,8 @@ set tabstop=4                                         "设置Tab键的宽度，�
 set shiftwidth=4                                      "换行时自动缩进宽度，可更改（宽度同tabstop）
 set smarttab                                          "指定按一次backspace就删除shiftwidth宽度
 set foldenable                                        "启用折叠
-set foldmethod=indent                                 "indent 折叠方式
-" set foldmethod=marker                                "marker 折叠方式
+" set foldmethod=indent                                 "indent 折叠方式
+set foldmethod=marker                                "marker 折叠方式
 
 " 常规模式下用空格键来开关光标行所在折叠（注：zR 展开所有折叠，zM 关闭所有折叠）
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
